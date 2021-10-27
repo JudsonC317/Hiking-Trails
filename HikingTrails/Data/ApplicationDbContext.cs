@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using HikingTrails.Models;
 
 namespace HikingTrails.Data
 {
@@ -12,5 +13,6 @@ namespace HikingTrails.Data
             : base(options)
         {
         }
+        public DbSet<HikingTrails.Models.Trail> Trail { get; set; }
     }
 }
